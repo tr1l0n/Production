@@ -1,0 +1,23 @@
+@import "../utils/variables";
+.page-header{
+    padding-top: 30px;
+    height: 72px;
+    background-color: $bg-color;
+}
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.header-line{
+    width: 335px;
+    height: 1px;
+    background-color: rgba(246, 245, 239, 0.2);
+    margin: auto;
+    margin-top: 20px;
+}

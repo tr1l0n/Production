@@ -1,1 +1,41 @@
-/*# sourceMappingURL=style.css.map */
+.page-header {
+  padding-top: 30px;
+  height: 72px;
+  background-color: #11131F;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.header-line {
+  width: 335px;
+  height: 1px;
+  background-color: rgba(246, 245, 239, 0.2);
+  margin: auto;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 335px;
+  margin: 0 auto;
+}
+
+* {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  padding-block-start: 0;
+}/*# sourceMappingURL=style.css.map */

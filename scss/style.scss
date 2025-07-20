@@ -6,3 +6,17 @@
 @import "./components/hero";
 @import "./components/reviews";
 @import "./components/yachts";
+.container{
+    max-width: 335px;
+    margin: 0 auto;
+}
+* {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+    padding-block-start: 0;
+}
