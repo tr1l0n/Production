@@ -19,4 +19,16 @@
     padding-inline-end: 0;
     padding-block-end: 0;
     padding-block-start: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+@media (min-width:768px){
+    .container{
+        max-width: 710px;
+    }
+}
+@media (min-width:1280px){
+    .container{
+        max-width: 1220px;
+    }
 }

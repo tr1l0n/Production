@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 </head>
 <header class="page-header">
     <div class="container header-flex">
@@ -19,9 +22,14 @@
                 <use href="./symbols.svg#text-logo" width="146px" height="10px"></use>
             </svg>
         </div>
-        <svg id="hamburgerBtn" onclick="openMenu()" width="20px" height="14px">
+        <svg id="hamburgerBtn" onclick="openMenu()" width="20px" height="14px" class="header_burger-menu">
             <use href="./symbols.svg#burger-btn" width="20px" height="14px"></use>
         </svg>
+        <nav class="header-nav">
+            <a href="#" class="header-nav-link">About</a>
+            <a href="#" class="header-nav-link">Yachts</a>
+            <a href="#" class="header-nav-link">Reviews</a>
+        </nav>
     </div>
     <div class="header-line">
 

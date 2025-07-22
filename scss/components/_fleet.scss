@@ -1,0 +1,92 @@
+@import "../utils/variables";
+.fleet{
+    padding-top: 30px;
+    height: 1800px;
+    background-color:$bg-color;
+    &_main-info{
+        font-family: DM Sans;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 22px;
+            line-height: 120%;
+            letter-spacing: -4.5%;
+            color: $text-color;
+    }
+    &-title{
+        background: linear-gradient(92.17deg, #BEC7C2 41.03%, #A1B5BA 90.31%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: DM Sans;
+        font-weight: 500;
+        font-style: Italic;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -4.5%;
+    }
+    &_wrapper-text{
+        display: flex;
+        gap: 14px;
+        padding-top: 50px;
+    }
+    &_extra-text{
+        font-family: DM Sans;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            line-height: 140%;
+            letter-spacing: -2%;
+            color: $text-color;
+    }
+    &_main-photo{
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+    &_text-photo{
+        padding-top: 20px;
+        padding-left: 70px;
+    }
+    &_request{
+        position: absolute;
+        width: 335px;
+        height: 203px;
+        z-index: 2;
+        top: 1432px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-text{
+            font-family: DM Sans;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 36px;
+                letter-spacing: -4.5%;
+                color: $text-color;
+        }
+        &-btn{
+            width: 131px;
+            height: 43px;
+            border: 1px solid $text-color;
+            background-color: transparent;
+            border-radius: 60px;
+            font-family: DM Sans;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 14px;
+            letter-spacing: -4.5%;
+            color: $text-color;
+        }
+    }
+    &_gradient{
+        position: absolute;
+        width: 255px;
+        height: 255px;
+        border-radius: 50%;
+        background-color: rgba(145, 175, 186, 1);
+        opacity: 60%;
+        transform: rotate(45deg);
+        filter: blur(60px);
+        top: 1400px;
+        left: -63px;
+    }
+}
