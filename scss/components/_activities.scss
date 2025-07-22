@@ -1,0 +1,48 @@
+@import "../utils/variables";
+.activities{
+    padding-top: 30px;
+    height: 1120px;
+    background-color: $bg-color;
+    &_wrapper{
+        width: 335px;
+        height: 335px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    &_text{
+        width: 95px;
+        height: 43px;
+        background-color: $text-color;
+        text-align: center;
+        font-family: DM Sans;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 14px;
+        line-height: 110.00000000000001%;
+        letter-spacing: -4.5%;
+        color: rgba(17, 19, 31, 1);
+        position: absolute;
+        left: 25px;
+        top: 268px;
+        border-radius: 60px;
+        padding-top: 15px;
+        &-large{
+            width: 135px;
+            height: 43px;
+            background-color: $text-color;
+            text-align: center;
+            font-family: DM Sans;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 14px;
+            line-height: 110.00000000000001%;
+            letter-spacing: -4.5%;
+            color: rgba(17, 19, 31, 1);
+            position: absolute;
+            left: 25px;
+            top: 268px;
+            border-radius: 60px;
+            padding-top: 15px;
+        }
+    }
+}
