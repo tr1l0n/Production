@@ -1,7 +1,8 @@
 @import "../utils/variables";
 .footer-page{
-    height: 350px;
+    height: 370px;
     background-color: $bg-color;
+    padding-top: 20px;
 }
 .footer-line {
     width: 335px;
@@ -25,4 +26,81 @@
             text-transform: uppercase;
             color: $text-color;
     }
+}
+.footer_title-socials{
+    font-family: DM Sans;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 14px;
+        line-height: 110.00000000000001%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: $text-color;
+        margin-bottom: 20px;
+}
+.socials{
+    width: 124px;
+    height: 63px;
+    margin-top: 40px;
+}
+.footer_svg-wrapper{
+    display: flex;
+    gap: 14px;
+}
+.svg_border{
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(246, 245, 239, 0.5);
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-left: 7px;
+    &-facebook {
+        width: 32px;
+            height: 32px;
+            border: 1px solid rgba(246, 245, 239, 0.5);
+            border-radius: 6px;
+            padding-left: 10px;
+            padding-top: 7px;
+        }
+        &-instagram {
+            width: 32px;
+            height: 32px;
+            border: 1px solid rgba(246, 245, 239, 0.5);
+            border-radius: 6px;
+            padding-left: 7px;
+            padding-top: 7px;
+        }
+}
+.footer_svg{
+    width: 15px;
+    height: 15px;
+}
+.footer_rights{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 14px;
+    &-text{
+        font-family: DM Sans;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 12px;
+            line-height: 118%;
+            letter-spacing: 3%;
+            text-align: center;
+            color: $text-color;
+            opacity: 0.5;
+    }
+}
+.footer_grad{
+    position: absolute;
+        width: 420px;
+        height: 420px;
+        border-radius: 50%;
+        background-color: rgba(145, 175, 186, 1);
+        opacity: 60%;
+        transform: rotate(46deg);
+        filter: blur(60px);
+        top: 260px;
+        left: -23px;
 }
