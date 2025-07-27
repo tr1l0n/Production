@@ -59,6 +59,7 @@
   line-height: 120%;
   letter-spacing: -4.5%;
   color: rgb(246, 245, 239);
+  text-align: left;
 }
 .fleet-title {
   background: linear-gradient(92.17deg, #BEC7C2 41.03%, #A1B5BA 90.31%);
@@ -76,6 +77,7 @@
   display: flex;
   gap: 14px;
   padding-top: 50px;
+  width: 335px;
 }
 .fleet_extra-text {
   font-family: DM Sans;
@@ -87,8 +89,10 @@
   color: rgb(246, 245, 239);
 }
 .fleet_main-photo {
-  padding-top: 40px;
+  margin-top: 40px;
   margin-bottom: 20px;
+  width: 100%;
+  height: 524px;
 }
 .fleet_text-photo {
   padding-top: 20px;
@@ -139,6 +143,64 @@
   left: -63px;
 }
 
+@media (min-width: 768px) {
+  .fleet {
+    height: 1900px;
+  }
+  .fleet_main-info {
+    width: 514px;
+    height: 152px;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-style: Italic;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -4.5%;
+  }
+  .fleet_main-photo {
+    height: 624px;
+  }
+  .fleet_text-photo {
+    position: absolute;
+    top: 1320px;
+    left: 322px;
+  }
+  .fleet_wrapper-text {
+    width: 400px;
+    margin-left: 45vw;
+    height: 242px;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -2%;
+    padding-top: 20px;
+  }
+  .fleet_request {
+    top: 1500px;
+    width: 641px;
+    height: 343px;
+  }
+  .fleet_request-text {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 70px;
+    letter-spacing: -4.5%;
+  }
+  .fleet_request-btn {
+    width: 153px;
+    height: 48px;
+  }
+  .fleet_gradient {
+    width: 400px;
+    height: 400px;
+    left: 0;
+    filter: blur(80px);
+    top: 1430px;
+  }
+}
 .footer-page {
   height: 370px;
   background-color: #11131F;
@@ -313,8 +375,10 @@
   }
 }
 .container {
-  max-width: 335px;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 * {
@@ -328,15 +392,4 @@
   padding-block-start: 0;
   text-decoration: none;
   list-style-type: none;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 710px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1220px;
-  }
 }/*# sourceMappingURL=style.css.map */
