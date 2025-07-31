@@ -618,6 +618,114 @@ textarea.booking__textarea:-webkit-autofill {
     display: none;
   }
 }
+.reviews__container {
+  height: 592px;
+  width: 1280px;
+  background-color: #11131f;
+}
+
+.reviews {
+  height: 592px;
+  width: 1216px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews__header {
+  width: 1216px;
+  height: 114px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__title-main {
+  width: 497px;
+  height: 114px;
+  font-family: "DM Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -0.045em;
+  color: #f6f5ef;
+}
+.reviews__title-main span {
+  background: linear-gradient(92.17deg, #bec7c2 41.03%, #a1b5ba 90.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.reviews__subtitle {
+  width: 273px;
+  height: 110px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #f6f5ef;
+}
+
+.reviews__list {
+  width: 1216px;
+  height: 282px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__item {
+  width: 322px;
+  height: 218px;
+  background-color: #1f212d;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__name {
+  width: 165px;
+  height: 20px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.045em;
+  color: #f6f5ef;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.reviews__text {
+  width: 320px;
+  height: 110px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(246, 245, 239, 0.5);
+}
+
+.reviews__button {
+  width: 68px;
+  height: 68px;
+  background-color: #93ABAE;
+  margin-left: 1148px;
+  border-radius: 8px;
+  box-shadow: none;
+  border: none;
+}
+
 .container {
   width: 100%;
   max-width: 1280px;
