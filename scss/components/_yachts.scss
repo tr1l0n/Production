@@ -1,0 +1,62 @@
+.section-three {
+    padding: 120px;
+    background-color: rgba(17, 19, 31, 1);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.slider-yaht-one {
+    background-color: rgba(31, 33, 45, 1);
+    width: 354px;
+    height: 508px;
+    border-radius: 24px;
+}
+
+.yaht-one_img {
+    padding: 16px;
+    border-radius: 24px;
+}
+
+.yaht-one-title {
+    display: flex;
+    gap: 147px;
+    padding-left: 32px;
+    align-items: center;
+}
+
+.yaht-one_p {
+    font-size: 16px;
+    color: rgba(246, 245, 239, 1);
+}
+
+.yaht-one_p-two {
+    color: rgba(246, 245, 239, 1);
+    font-size: 12px;
+}
+
+.text-div {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.text-div_ul-one, .text-div_ul-two {
+    color: rgba(246, 245, 239, 1);
+    list-style: none;
+}
+
+.yaht-two-title {
+    display: flex;
+    gap: 32px;
+    padding-left: 32px;
+    align-items: center;
+}
+
+.arrow-start {
+    padding: 75px;
+}
+
+.arrow-end {
+    padding: 75px;
+}

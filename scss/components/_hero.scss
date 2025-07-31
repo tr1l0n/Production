@@ -1,0 +1,143 @@
+body{
+background-color: rgba(17, 19, 31, 1);
+display: flex;
+gap: 870px;
+}
+
+.clients {
+display: flex;
+flex-direction: column;
+padding: 0px;
+gap: 11px;
+position: absolute;
+width: 149px;
+height: 82px;
+left: 64px;
+top: 183px;
+}
+
+.man {
+position: absolute;
+width: 233px;
+height: 233px;
+left: 337px;
+top: 183px;
+border-radius: 24px;
+}
+
+.yacht {
+position: absolute;
+width: 378px;
+height: 221px;
+left: 56px;
+top: 376px;
+}
+
+svg {
+position: absolute;
+width: 426px;
+height: 598px;
+left: 32px;
+top: 151px;
+}
+
+.text_big-svg {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 14px;
+position: absolute;
+width: 362px;
+height: 66px;
+left: 64px;
+top: 619px;
+}
+
+.text_big-svg-12m {
+width: 130px;
+height: 66px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 110%;
+display: flex;
+align-items: center;
+letter-spacing: -0.045em;
+text-transform: uppercase;color: #11131F;flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.text_big-svg-p {
+width: 208px;
+height: 36px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 110%;
+letter-spacing: -0.045em;
+color: #11131F;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.clients-text {
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 110%;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #11131F;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.clients-img {
+display: flex;    
+}
+
+.title {
+color: rgba(246, 245, 239, 1);
+align-items: center;
+font-size: 60px;
+padding-top: 140px;
+}
+
+.title-p {
+    font-size: 16px;
+    color: rgba(246, 245, 239, 1);
+}
+
+.title-button {
+    width: 150px;
+    height: 48px;
+    border-radius: 60px;
+    background-color: rgba(147, 171, 174, 1);
+    color: rgba(246, 245, 239, 1);
+    font-size: 18px;
+}
+
+.title-btn {
+    width: 117px;
+    height: 48px;
+    background-color: rgba(17, 19, 31, 1);
+    color: rgba(246, 245, 239, 1);
+    font-size: 18px;
+    border-radius: 60px;
+    border-color: rgba(246, 245, 239, 1);
+}
+
+.big-svg {
+    padding-left: 32px;
+}
+
+.button-title {
+    padding-top: 15px;
+}
