@@ -687,11 +687,6 @@ textarea.booking__textarea:-webkit-autofill {
     display: none;
   }
 }
-body {
-  background-color: rgb(17, 19, 31);
-  display: flex;
-  gap: 870px;
-}
 
 .clients {
   display: flex;
@@ -865,6 +860,7 @@ svg {
   letter-spacing: -0.045em;
   color: #f6f5ef;
 }
+
 .reviews__title-main span {
   background: linear-gradient(92.17deg, #bec7c2 41.03%, #a1b5ba 90.31%);
   -webkit-background-clip: text;
