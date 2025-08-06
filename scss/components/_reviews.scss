@@ -1,9 +1,9 @@
 .reviews__container {
-  height: 592px;
-  width: 1280px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+.reviews__body {
   background-color: #11131f;
 }
 .reviews {
@@ -55,8 +55,8 @@
   justify-content: space-between;
 }
 .reviews__item {
-  width: 322px;
-  height: 218px;
+  width: 384px;
+  height: 282px;
   background-color: #1f212d;
   border-radius: 24px;
   padding: 32px;
@@ -93,9 +93,154 @@
 .reviews__button {
   width: 68px;
   height: 68px;
-  background-color: #93ABAE;
+  background-color: #93abae;
   margin-left: 1148px;
   border-radius: 8px;
   box-shadow: none;
   border: none;
+}
+.for__phone {
+  display: none;
+}
+@media (max-width: 1279px) {
+  .reviews__container {
+    height: 799px;
+  }
+  .reviews {
+    justify-content: flex-start;
+    width: 704px;
+    height: 699px;
+    margin-top: 100px;
+  }
+  .reviews__title-main {
+    height: auto;
+  }
+  .reviews__subtitle {
+    position: absolute;
+    width: 273px;
+    height: auto;
+    right: 0;
+    bottom: 0;
+  }
+  .reviews__header {
+    display: block;
+    width: 704px;
+    min-height: 256px;
+    height: 256px;
+    position: relative;
+    padding: 0;
+  }
+  .reviews__item {
+    width: 344px;
+    height: 266px;
+    padding: 24px 12px;
+    &:last-of-type {
+      display: none;
+    }
+  }
+  .reviews__list {
+    width: 704px;
+    height: 266px;
+    margin-top: 64px;
+  }
+  .reviews__button {
+    margin-left: 636px;
+  }
+  .for__phone {
+    display: block;
+    width: 59px;
+    // margin-top: 32px;
+    margin: 32px auto 0 auto;
+  }
+  .group-of-circle {
+    width: 59px;
+    height: 13px;
+    display: flex;
+    justify-content: space-between;
+    & li {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: #1f212d;
+      box-shadow: 2px 1px 3px #18375b20;
+      &:first-of-type {
+        background-color: #88b3b9;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .reviews {
+    width: 375px;
+    height: 635px;
+    margin-top: 80px;
+  }
+  .reviews__header {
+    width: 335px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .reviews__title-main {
+    width: 335px;
+    font-size: 24px;
+  }
+  .reviews__subtitle {
+    width: 335px;
+    position: static;
+    font-size: 14px;
+    margin-top: 24px;
+  }
+  .reviews__list {
+  }
+  .reviews__item {
+    display: none;
+    width: 335px;
+    height: 208px;
+    &:first-of-type {
+      display: flex;
+    }
+    & img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 18px;
+    }
+  }
+  .reviews__name {
+    margin-top: 0;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .reviews__text {
+    width: 300px;
+    height: 68px;
+    font-size: 12px;
+  }
+  .for__phone {
+    margin-top: 14px;
+  }
+  .group-of-circle {
+    width: 59px;
+    height: 13px;
+    & li {
+      width: 13px;
+    }
+  }
+  .reviews__button {
+    margin-left: 291px;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    & svg {
+      width: 16px;
+      height: 8px;
+    }
+  }
+  .reviews__body {
+    & .container {
+      width: 375px;
+    }
+  }
 }
