@@ -8,38 +8,55 @@
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body class="booking__body">
     <div class="container-booking container">
       <div class="booking">
         <div class="booking-title">
-        <h2 class="booking__title-main">Rent a yacht now</h2>
-        <div class="booking__img-wrapper">
-          <img src="/img/img-yaht.png" alt="yacht" class="booking__img">
+          <h2 class="booking__title-main">Rent a yacht now</h2>
+          <div class="booking__img-wrapper">
+            <img src="/img/img-yaht.png" alt="yacht" class="booking__img">
+          </div>
         </div>
-      </div>
-        <form action class="booking__form">
+        <div class="booking__form">
           <div class="input-box">
-          <input type="text" placeholder="Full Name"
-            class="booking__input booking__input--name">
-          <input type="text" placeholder="Email"
-            class="booking__input booking__input--email">
-          <input type="text" placeholder="Phone number"
-            class="booking__input booking__input--phone">
-          <textarea placeholder="Comment" class="booking__textarea"></textarea>
-        </div>
-          <button class="booking__button">
+            <input type="text" placeholder="Full Name"
+              class="booking__input booking__input--name">
+            <input type="text" placeholder="Email"
+              class="booking__input booking__input--email">
+            <input type="text" placeholder="Phone number"
+              class="booking__input booking__input--phone">
+            <textarea placeholder="Comment"
+              class="booking__textarea"></textarea>
+          </div>
+          <button data-modal-open class="booking__button">
             Send
             <svg width="18" height="10" class="booking__icon">
               <use href="./symbols.svg#right-->"></use>
             </svg>
           </button>
-        </form>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <div class="btn-close-box">
+                <button class="modal__btn-close" data-modal-close>
+                  <svg width="24" height="24">
+                    <use href="./symbols.svg#krest"></use>
+                  </svg>
+                </button>
+              </div>
+              <img class="modal__img-yaht" src="./img/modal-yaht.png" alt="yaht">
+              <h2 class="modal__title">Thank you</h2>
+              <p class="modal__p-text">Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="booking__div-circle"></div>
     </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
