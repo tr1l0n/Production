@@ -115,12 +115,16 @@
     height: 428px;
   }
 }
-.container-booking {
+.booking__body {
   background-color: #1f212d;
+}
+
+.container-booking {
   width: 1280px;
   height: 713px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .booking {
@@ -242,6 +246,17 @@ textarea.booking__textarea:-webkit-autofill {
   margin-left: 16px;
 }
 
+.booking__div-circle {
+  width: 414px;
+  height: 414px;
+  background-color: #91afba;
+  border-radius: 50%;
+  filter: blur(100px);
+  position: absolute;
+  top: 194px;
+  right: -208px;
+}
+
 @media (max-width: 1279px) {
   .container-booking {
     height: 549px;
@@ -264,6 +279,9 @@ textarea.booking__textarea:-webkit-autofill {
   }
   .input-box * {
     width: 364px;
+  }
+  .booking__div-circle {
+    top: 90px;
   }
 }
 @media (max-width: 767px) {
@@ -307,6 +325,10 @@ textarea.booking__textarea:-webkit-autofill {
   .booking__button {
     width: 123px;
     height: 43px;
+  }
+  .booking__div-circle {
+    bottom: 0;
+    top: auto;
   }
 }
 .fleet {
