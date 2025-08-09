@@ -253,6 +253,7 @@ textarea.booking__textarea:-webkit-autofill {
   border-radius: 50%;
   filter: blur(100px);
   position: absolute;
+  z-index: -1000;
   top: 194px;
   right: -208px;
 }
@@ -280,8 +281,20 @@ textarea.booking__textarea:-webkit-autofill {
   height: 522px;
   background-color: #1f212d;
   transform: translate(-50%, -50%);
-  padding: 32px;
   border-radius: 40px;
+  z-index: 1000;
+}
+
+.modal-container {
+  width: 570px;
+  height: 522px;
+  padding: 32px;
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal__btn-close {
@@ -294,7 +307,18 @@ textarea.booking__textarea:-webkit-autofill {
 }
 
 .modal__img-yaht {
-  margin: 65px 52px 21px 52px;
+  margin: 65px 60px 21px 60px;
+  width: 338px;
+  height: 198px;
+}
+
+.modal__div-textbox {
+  width: 442px;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 32px;
 }
 
 .modal__title {
@@ -322,10 +346,21 @@ textarea.booking__textarea:-webkit-autofill {
   margin-top: 16px;
 }
 
+.booking__div-circle-modal {
+  left: 153px;
+  top: 66px;
+  width: 265px;
+  height: 265px;
+  filter: blur(100px);
+  z-index: -1000;
+  transform: rotate(90deg);
+}
+
 @media (max-width: 1279px) {
   .container-booking {
     height: 549px;
     width: 768px;
+    align-items: center;
   }
   .booking {
     width: 704px;
@@ -353,9 +388,10 @@ textarea.booking__textarea:-webkit-autofill {
   .container-booking {
     height: 755px;
     width: 375px;
-    align-items: start;
+    align-items: center;
     padding-top: 80px;
     justify-content: center;
+    overflow: hidden;
   }
   .booking {
     width: 335px;
@@ -394,6 +430,48 @@ textarea.booking__textarea:-webkit-autofill {
   .booking__div-circle {
     bottom: 0;
     top: auto;
+  }
+  .modal {
+    width: 335px;
+    height: 396px;
+    border-radius: 20px;
+  }
+  .modal-container {
+    padding: 14px;
+    width: 335px;
+    border-radius: 20px;
+    height: 396px;
+  }
+  .modal__img-yaht {
+    width: 287px;
+    height: 149px;
+  }
+  .booking__div-circle-modal {
+    width: 142px;
+    height: 142px;
+    top: 75px;
+    left: 96px;
+  }
+  .modal__div-textbox {
+    width: 287px;
+    height: 143px;
+  }
+  .modal__title {
+    width: auto;
+    font-size: 24px;
+  }
+  .modal__p-text {
+    width: 287px;
+    height: 100px;
+    font-size: 14px;
+  }
+  .modal__img-yaht {
+    margin: 26px 24px 24px 24px;
+  }
+  .modal__btn-close {
+    right: 14px;
+    width: 20px;
+    height: 20px;
   }
 }
 .fleet {
