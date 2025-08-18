@@ -2,6 +2,7 @@
   background-color: #11131f;
   height: 1120px;
   padding-top: 30px;
+  position: relative;
 }
 
 .activities_wrapper {
@@ -128,12 +129,16 @@
   }
 }
 
-.container-booking {
+.booking__body {
   background-color: #1f212d;
+}
+
+.container-booking {
   align-items: center;
   width: 1280px;
   height: 713px;
   display: flex;
+  position: relative;
 }
 
 .booking {
@@ -262,8 +267,119 @@
   margin-left: 16px;
 }
 
+.booking__div-circle {
+  filter: blur(100px);
+  z-index: -1000;
+  background-color: #91afba;
+  border-radius: 50%;
+  width: 414px;
+  height: 414px;
+  position: absolute;
+  top: 194px;
+  right: -208px;
+}
+
+.backdrop {
+  opacity: 1;
+  background-color: #00000080;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  z-index: 1000;
+  background-color: #1f212d;
+  border-radius: 40px;
+  width: 570px;
+  height: 522px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-container {
+  border-radius: 40px;
+  flex-direction: column;
+  align-items: center;
+  width: 570px;
+  height: 522px;
+  padding: 32px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal__btn-close {
+  background-color: #0000;
+  border: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 32px;
+}
+
+.modal__img-yaht {
+  width: 338px;
+  height: 198px;
+  margin: 65px 60px 21px;
+}
+
+.modal__div-textbox {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 442px;
+  height: 142px;
+  margin-left: 32px;
+  display: flex;
+}
+
+.modal__title {
+  letter-spacing: -.045em;
+  color: #f6f5ef;
+  width: 282px;
+  height: 38px;
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.modal__p-text {
+  letter-spacing: -.02em;
+  color: #f6f5ef;
+  width: 442px;
+  height: 88px;
+  margin-top: 16px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.booking__div-circle-modal {
+  filter: blur(100px);
+  z-index: -1000;
+  width: 265px;
+  height: 265px;
+  top: 66px;
+  left: 153px;
+  transform: rotate(90deg);
+}
+
 @media (width <= 1279px) {
   .container-booking {
+    align-items: center;
     width: 768px;
     height: 549px;
   }
@@ -290,15 +406,20 @@
   .input-box * {
     width: 364px;
   }
+
+  .booking__div-circle {
+    top: 90px;
+  }
 }
 
 @media (width <= 767px) {
   .container-booking {
     justify-content: center;
-    align-items: start;
+    align-items: center;
     width: 375px;
     height: 755px;
     padding-top: 80px;
+    overflow: hidden;
   }
 
   .booking {
@@ -342,12 +463,69 @@
     width: 123px;
     height: 43px;
   }
+
+  .booking__div-circle {
+    top: auto;
+    bottom: 0;
+  }
+
+  .modal {
+    border-radius: 20px;
+    width: 335px;
+    height: 396px;
+  }
+
+  .modal-container {
+    border-radius: 20px;
+    width: 335px;
+    height: 396px;
+    padding: 14px;
+  }
+
+  .modal__img-yaht {
+    width: 287px;
+    height: 149px;
+  }
+
+  .booking__div-circle-modal {
+    width: 142px;
+    height: 142px;
+    top: 75px;
+    left: 96px;
+  }
+
+  .modal__div-textbox {
+    width: 287px;
+    height: 143px;
+  }
+
+  .modal__title {
+    width: auto;
+    font-size: 24px;
+  }
+
+  .modal__p-text {
+    width: 287px;
+    height: 100px;
+    font-size: 14px;
+  }
+
+  .modal__img-yaht {
+    margin: 26px 24px 24px;
+  }
+
+  .modal__btn-close {
+    width: 20px;
+    height: 20px;
+    right: 14px;
+  }
 }
 
 .fleet {
   background-color: #11131f;
   height: 1800px;
   padding-top: 30px;
+  position: relative;
 }
 
 .fleet_main-info {
@@ -729,6 +907,7 @@
   background-color: #11131f;
   height: 72px;
   padding-top: 30px;
+  position: relative;
 }
 
 .header-flex {
@@ -930,9 +1109,13 @@
 }
 
 .reviews__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.reviews__body {
   background-color: #11131f;
-  width: 1280px;
-  height: 592px;
 }
 
 .reviews {
@@ -992,8 +1175,8 @@
   border-radius: 24px;
   flex-direction: column;
   align-items: center;
-  width: 322px;
-  height: 218px;
+  width: 384px;
+  height: 282px;
   padding: 32px;
   display: flex;
 }
@@ -1034,6 +1217,175 @@
   border: none;
   border-radius: 8px;
   margin-left: 1148px;
+}
+
+.for__phone {
+  display: none;
+}
+
+@media (width <= 1279px) {
+  .reviews__container {
+    height: 799px;
+  }
+
+  .reviews {
+    justify-content: flex-start;
+    width: 704px;
+    height: 699px;
+    margin-top: 100px;
+  }
+
+  .reviews__title-main {
+    height: auto;
+  }
+
+  .reviews__subtitle {
+    width: 273px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .reviews__header {
+    width: 704px;
+    height: 256px;
+    min-height: 256px;
+    padding: 0;
+    display: block;
+    position: relative;
+  }
+
+  .reviews__item {
+    width: 344px;
+    height: 266px;
+    padding: 24px 12px;
+  }
+
+  .reviews__item:last-of-type {
+    display: none;
+  }
+
+  .reviews__list {
+    width: 704px;
+    height: 266px;
+    margin-top: 64px;
+  }
+
+  .reviews__button {
+    margin-left: 636px;
+  }
+
+  .for__phone {
+    width: 59px;
+    margin: 32px auto 0;
+    display: block;
+  }
+
+  .group-of-circle {
+    justify-content: space-between;
+    width: 59px;
+    height: 13px;
+    display: flex;
+  }
+
+  .group-of-circle li {
+    background-color: #1f212d;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    box-shadow: 2px 1px 3px #18375b20;
+  }
+
+  .group-of-circle li:first-of-type {
+    background-color: #88b3b9;
+  }
+}
+
+@media (width <= 767px) {
+  .reviews {
+    width: 375px;
+    height: 635px;
+    margin-top: 80px;
+  }
+
+  .reviews__header {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 335px;
+    height: 220px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+
+  .reviews__title-main {
+    width: 335px;
+    font-size: 24px;
+  }
+
+  .reviews__subtitle {
+    width: 335px;
+    margin-top: 24px;
+    font-size: 14px;
+    position: static;
+  }
+
+  .reviews__item {
+    width: 335px;
+    height: 208px;
+    display: none;
+  }
+
+  .reviews__item:first-of-type {
+    display: flex;
+  }
+
+  .reviews__item img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+  }
+
+  .reviews__name {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .reviews__text {
+    width: 300px;
+    height: 68px;
+    font-size: 12px;
+  }
+
+  .for__phone {
+    margin-top: 14px;
+  }
+
+  .group-of-circle {
+    width: 59px;
+    height: 13px;
+  }
+
+  .group-of-circle li {
+    width: 13px;
+  }
+
+  .reviews__button {
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+    margin-left: 291px;
+  }
+
+  .reviews__button svg {
+    width: 16px;
+    height: 8px;
+  }
+
+  .reviews__body .container {
+    width: 375px;
+  }
 }
 
 .section-three {

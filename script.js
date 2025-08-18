@@ -44,5 +44,5 @@ function insertHtmlFragment(targetId, htmlContent) {
 
 document.addEventListener('DOMContentLoaded', () => {
     insertHtmlFragment('header-placeholder', headerHtml);
-   insertHtmlFragment('fleet-placeholder', fleetHtml)
+    insertHtmlFragment('fleet-placeholder', fleetHtml)
 });

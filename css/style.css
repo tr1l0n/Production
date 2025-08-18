@@ -2,6 +2,7 @@
   padding-top: 30px;
   height: 1120px;
   background-color: #11131F;
+  position: relative;
 }
 .activities_wrapper {
   width: 335px;
@@ -478,6 +479,7 @@ textarea.booking__textarea:-webkit-autofill {
   padding-top: 30px;
   height: 1800px;
   background-color: #11131F;
+  position: relative;
 }
 .fleet_main-info {
   font-family: DM Sans;
@@ -825,6 +827,7 @@ textarea.booking__textarea:-webkit-autofill {
   padding-top: 30px;
   height: 72px;
   background-color: #11131F;
+  position: relative;
 }
 
 .header-flex {
