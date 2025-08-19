@@ -99,9 +99,7 @@ display: flex;
 
 .title {
 color: rgba(246, 245, 239, 1);
-align-items: center;
 font-size: 60px;
-padding-top: 140px;
 }
 
 .title-p {
@@ -134,4 +132,77 @@ padding-top: 140px;
 
 .button-title {
     padding-top: 15px;
+}
+
+body {
+    background-color: rgba(31, 33, 45, 1);
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    padding-left: 694px;
+    padding-top: 149px;
+}
+
+.body {
+    font-family: DM Sans;
+}
+
+.special {
+    color: rgba(147, 171, 174, 1);
+}
+
+.cricle {
+    position: absolute;
+left: -35.55%;
+right: 81.64%;
+top: 50.08%;
+bottom: 12.52%;
+
+background: #939CAC;
+opacity: 0.9;
+filter: blur(100px);
+transform: matrix(0.72, -0.69, 0.7, 0.72, 0, 0);
+}
+
+@media (max-width: 768px) {
+    
+    .text {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+position: absolute;
+width: 704px;
+height: 294px;
+left: 32px;
+top: 151px;
+    }
+
+    .big-svg {
+    position: absolute;
+width: 426px;
+height: 598px;
+left: 32px;
+top: 509px;
+    }
+
+    .sumbol {
+        width: 426px;
+        height: 598px;
+    }
+
+    .man {
+        width: 233px;
+        height: 233px;
+    }
+
+    .yacht {
+        width: 378px;
+        height: 221px;
+    }
+
+
 }
