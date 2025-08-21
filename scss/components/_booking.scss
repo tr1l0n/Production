@@ -146,8 +146,8 @@ textarea.booking__textarea:-webkit-autofill {
 }
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 700px;
+  left: 190px;
   width: 570px;
   height: 522px;
   background-color: #1f212d;
@@ -219,7 +219,7 @@ textarea.booking__textarea:-webkit-autofill {
   z-index: -1000;
   transform: rotate(90deg);
 }
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .container-booking {
     height: 549px;
     width: 768px;
@@ -249,7 +249,7 @@ textarea.booking__textarea:-webkit-autofill {
     top: 90px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container-booking {
     height: 755px;
     width: 375px;
@@ -300,6 +300,8 @@ textarea.booking__textarea:-webkit-autofill {
     width: 335px;
     height: 396px;
     border-radius: 20px;
+    top: 400px;
+    left: 370px;
   }
   .modal-container {
     padding: 14px;

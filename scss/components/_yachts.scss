@@ -82,11 +82,14 @@
     }
     .arrow-left{
         top: 620px;
-        left: 330px;
+        left: 300px;
     }
     .arrow-right{
         top: 620px;
-        left: 400px;
+        left: 370px;
+    }
+    .yachts{
+        padding-left: 15px;
     }
 }
 @media (max-width:375px) {
@@ -99,7 +102,5 @@
 .arrow-right{
     left: 170px;
 }
-.yachts{
-    margin-left: 20px;
-}
+
 }
