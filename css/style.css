@@ -996,9 +996,7 @@ textarea.booking__textarea:-webkit-autofill {
 
 .title {
   color: rgb(246, 245, 239);
-  align-items: center;
   font-size: 60px;
-  padding-top: 140px;
 }
 
 .title-p {
@@ -1033,6 +1031,70 @@ textarea.booking__textarea:-webkit-autofill {
   padding-top: 15px;
 }
 
+body {
+  background-color: rgb(31, 33, 45);
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  padding-left: 694px;
+  padding-top: 149px;
+}
+
+.body {
+  font-family: DM Sans;
+}
+
+.special {
+  color: rgb(147, 171, 174);
+}
+
+.cricle {
+  position: absolute;
+  left: -35.55%;
+  right: 81.64%;
+  top: 50.08%;
+  bottom: 12.52%;
+  background: #939CAC;
+  opacity: 0.9;
+  filter: blur(100px);
+  transform: matrix(0.72, -0.69, 0.7, 0.72, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    position: absolute;
+    width: 704px;
+    height: 294px;
+    left: 32px;
+    top: 151px;
+  }
+  .big-svg {
+    position: absolute;
+    width: 426px;
+    height: 598px;
+    left: 32px;
+    top: 509px;
+  }
+  .sumbol {
+    width: 426px;
+    height: 598px;
+  }
+  .man {
+    width: 233px;
+    height: 233px;
+  }
+  .yacht {
+    width: 378px;
+    height: 221px;
+  }
+}
 .reviews__container {
   padding: 0;
   margin: 0 auto;
@@ -1286,69 +1348,139 @@ textarea.booking__textarea:-webkit-autofill {
     width: 375px;
   }
 }
-.section-three {
-  padding: 120px;
-  background-color: rgb(17, 19, 31);
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
-.slider-yaht-one {
+.card-one, .card-two, .card-three {
   background-color: rgb(31, 33, 45);
   width: 354px;
   height: 508px;
   border-radius: 24px;
 }
 
-.yaht-one_img {
-  padding: 16px;
-  border-radius: 24px;
+.conteiner {
+  background-color: rgb(17, 19, 31);
+  background-image: url(./symbol_background-img.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  font-family: DM Sans;
 }
 
-.yaht-one-title {
+.cards {
   display: flex;
-  gap: 147px;
+  gap: 16px;
+  align-items: center;
+}
+
+.yaht-one_img, .yaht-twoo_img, .yaht-three_img {
+  width: 322px;
+  height: 268px;
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.card-one-title, .card-two-title, .card-three-title {
+  display: flex;
   padding-left: 32px;
   align-items: center;
 }
 
-.yaht-one_p {
-  font-size: 16px;
-  color: rgb(246, 245, 239);
+.card-one-title {
+  gap: 147px;
 }
 
-.yaht-one_p-two {
+.card-two-title {
+  gap: 27px;
+}
+
+.card-three-title {
+  gap: 114px;
+}
+
+.card-one_p, .card-two_p, .card-three_p {
+  color: rgb(246, 245, 239);
+  font-size: 16px;
+}
+
+.card-one_p-two, .card-two_p-two, .card-three_p-two {
   color: rgb(246, 245, 239);
   font-size: 12px;
 }
 
 .text-div {
   display: flex;
-  align-items: center;
   gap: 32px;
 }
 
 .text-div_ul-one, .text-div_ul-two {
-  color: rgb(246, 245, 239);
   list-style: none;
+  color: rgb(246, 245, 239);
+  font-size: 14px;
 }
 
-.yaht-two-title {
-  display: flex;
-  gap: 32px;
-  padding-left: 32px;
-  align-items: center;
+@media (max-width: 768px) {
+  .card-three {
+    display: none;
+  }
+  .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    order: 1;
+  }
+  .arrow-start:first-of-type, .arrow-end:last-of-type {
+    order: 2;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .conteiner::after {
+    content: "";
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+  .arrow-start {
+    position: absolute;
+    padding-top: 548px;
+    justify-content: center;
+    padding-right: 65px;
+  }
+  .arrow-end {
+    justify-content: center;
+    padding-left: 65px;
+  }
+  .card-one, .card-two {
+    width: 344px;
+    height: 508px;
+  }
+  .yaht-one_img, .yaht-twoo_img {
+    width: 312px;
+    height: 268px;
+    padding: 16px;
+  }
 }
-
-.arrow-start {
-  padding: 75px;
+@media (max-width: 376px) {
+  .card-two {
+    display: none;
+  }
+  .card-one {
+    width: 335px;
+  }
+  .yaht-one_img {
+    width: 299px;
+    height: 251px;
+  }
+  .text-div {
+    align-items: start;
+  }
 }
-
-.arrow-end {
-  padding: 75px;
-}
-
 .container {
   width: 100%;
   max-width: 1280px;
