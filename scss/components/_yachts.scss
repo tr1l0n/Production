@@ -17,7 +17,7 @@
     height: 508px;
     background-color: #1F212D;
     border-radius: 24px;
-    padding-left: 16px;
+    padding-left: 8px;
     padding-top: 16px;
     &_yacht-name{
         font-family: DM Sans;
@@ -76,7 +76,7 @@
     top: 350px;
     left: 10px;
 }
-@media (max-width:765px){
+@media (max-width:768px){
     .card:nth-child(3){
         display: none;
     }
@@ -94,9 +94,12 @@
     display: none;
 }
 .arrow-left{
-    left: 130px;
+    left: 100px;
 }
 .arrow-right{
-    left: 200px;
+    left: 170px;
+}
+.yachts{
+    margin-left: 20px;
 }
 }

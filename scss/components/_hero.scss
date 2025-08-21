@@ -1,9 +1,11 @@
 @import "../utils/variables";
 .hero{
+    padding-top: 30px;
     height: 850px;
-    &-flex{
-        display: flex;
-    }
+    background-color: $bg-color;
+    // &-flex{
+    //     display: flex;
+    // }
     &_card{
         margin-left: 10px;
         position: relative;
@@ -89,7 +91,7 @@
     &_wrapper{
         width: 554px;
         height: 360px;
-        transform: translate(250px,150px);
+        transform: translate(650px,-450px);
     }
     &_title{
         width: 545px;
@@ -156,6 +158,7 @@
 }
 @media (max-width:768px){
     .hero-flex{
+        display: flex;
         flex-direction: column-reverse;
     }
     .hero_wrapper{
@@ -169,7 +172,7 @@
 }
 @media (max-width:375px) {
     .hero{
-        height: 830px;
+        height: 730px;
         &_title{
             text-align: left;
             width: 332px;

@@ -11,9 +11,11 @@
                     <use href="../symbols.svg#text-logo" width="146px" height="10px"></use>
                 </svg>
             </div>
-            <svg id="hamburgerBtn" onclick="openMenu()" width="20px" height="14px" class="header_burger-menu">
-                <use href="../symbols.svg#burger-btn" width="20px" height="14px"></use>
-            </svg>
+            <button class="hamburger-btn" id="hamburgerBtn" onclick="openMenu()">
+                <div class="hamburger-line" style="width: 10px;"></div>
+                <div class="hamburger-line" style="width: 20px;"></div>
+                <div class="hamburger-line" style="width: 15px;"></div>
+            </button>
             <nav class="header-nav">
                 <a href="#" class="header-nav-link">About</a>
                 <a href="#" class="header-nav-link">Yachts</a>
@@ -47,5 +49,5 @@
         </div>
         <div class="burger-grad"></div>
     </div> 
-<!--  <script src="./script.js"></script> -->
+ <script  src="../burger.js"></script>
 

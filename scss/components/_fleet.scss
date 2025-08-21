@@ -1,7 +1,7 @@
 @import "../utils/variables";
 .fleet{
-    padding-top: 30px;
-    height: 1800px;
+    padding-top: 130px;
+    height: 1750px;
     background-color:$bg-color;
     position: relative;
     &_main-info{
@@ -59,7 +59,7 @@
         width: 335px;
         height: 203px;
         z-index: 2;
-        top: 1432px;
+        top: 1532px;
         left: 20px;
         display: flex;
         flex-direction: column;
@@ -87,6 +87,7 @@
         }
     }
     &_gradient{
+        z-index: 2;
         position: absolute;
         width: 255px;
         height: 255px;
@@ -184,7 +185,7 @@
             transform: translate(372px,100px);
         }
         &_text-photo{
-            top: 800px;
+            top: 900px;
             left: 332px;
         }
         &_yacht-photo{
@@ -195,7 +196,7 @@
         &_request{
             width: 882px;
             height: 442px;
-            top: 950px;
+            top: 1050px;
             left: 232px;
             &-text{
                 font-family: DM Sans;

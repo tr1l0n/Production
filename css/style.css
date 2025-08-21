@@ -476,8 +476,8 @@ textarea.booking__textarea:-webkit-autofill {
   }
 }
 .fleet {
-  padding-top: 30px;
-  height: 1800px;
+  padding-top: 130px;
+  height: 1750px;
   background-color: #11131F;
   position: relative;
 }
@@ -537,7 +537,7 @@ textarea.booking__textarea:-webkit-autofill {
   width: 335px;
   height: 203px;
   z-index: 2;
-  top: 1432px;
+  top: 1532px;
   left: 20px;
   display: flex;
   flex-direction: column;
@@ -565,6 +565,7 @@ textarea.booking__textarea:-webkit-autofill {
   color: rgb(246, 245, 239);
 }
 .fleet_gradient {
+  z-index: 2;
   position: absolute;
   width: 255px;
   height: 255px;
@@ -662,7 +663,7 @@ textarea.booking__textarea:-webkit-autofill {
     transform: translate(372px, 100px);
   }
   .fleet_text-photo {
-    top: 800px;
+    top: 900px;
     left: 332px;
   }
   .fleet_yacht-photo {
@@ -673,7 +674,7 @@ textarea.booking__textarea:-webkit-autofill {
   .fleet_request {
     width: 882px;
     height: 442px;
-    top: 950px;
+    top: 1050px;
     left: 232px;
   }
   .fleet_request-text {
@@ -900,6 +901,27 @@ textarea.booking__textarea:-webkit-autofill {
   transform: translateX(0);
 }
 
+.hamburger-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 4px;
+  background-color: transparent;
+  border: 0px;
+}
+
+.hamburger-line {
+  background-color: #F6F5EF;
+  width: 20px;
+  height: 2px;
+  border-radius: 50%;
+  border: 0px;
+}
+
 @media (min-width: 768px) {
   .header-nav {
     display: block;
@@ -916,15 +938,14 @@ textarea.booking__textarea:-webkit-autofill {
     text-transform: uppercase;
     color: rgb(246, 245, 239);
   }
-  .header_burger-menu {
+  .hamburger-btn {
     display: none;
   }
 }
 .hero {
+  padding-top: 30px;
   height: 850px;
-}
-.hero-flex {
-  display: flex;
+  background-color: #11131F;
 }
 .hero_card {
   margin-left: 10px;
@@ -1011,7 +1032,7 @@ textarea.booking__textarea:-webkit-autofill {
 .hero_wrapper {
   width: 554px;
   height: 360px;
-  transform: translate(250px, 150px);
+  transform: translate(650px, -450px);
 }
 .hero_title {
   width: 545px;
@@ -1079,6 +1100,7 @@ textarea.booking__textarea:-webkit-autofill {
 
 @media (max-width: 768px) {
   .hero-flex {
+    display: flex;
     flex-direction: column-reverse;
   }
   .hero_wrapper {
@@ -1092,7 +1114,7 @@ textarea.booking__textarea:-webkit-autofill {
 }
 @media (max-width: 375px) {
   .hero {
-    height: 830px;
+    height: 730px;
   }
   .hero_title {
     text-align: left;
@@ -1304,7 +1326,7 @@ textarea.booking__textarea:-webkit-autofill {
     justify-content: flex-start;
     width: 704px;
     height: 699px;
-    margin-top: 100px;
+    margin-top: 0px;
   }
   .reviews__title-main {
     height: auto;
@@ -1366,7 +1388,7 @@ textarea.booking__textarea:-webkit-autofill {
   .reviews {
     width: 375px;
     height: 635px;
-    margin-top: 80px;
+    margin-top: 0px;
   }
   .reviews__header {
     width: 335px;
@@ -1453,7 +1475,7 @@ textarea.booking__textarea:-webkit-autofill {
   height: 508px;
   background-color: #1F212D;
   border-radius: 24px;
-  padding-left: 16px;
+  padding-left: 8px;
   padding-top: 16px;
 }
 .card_yacht-name {
@@ -1515,7 +1537,7 @@ textarea.booking__textarea:-webkit-autofill {
   left: 10px;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   .card:nth-child(3) {
     display: none;
   }
@@ -1533,10 +1555,13 @@ textarea.booking__textarea:-webkit-autofill {
     display: none;
   }
   .arrow-left {
-    left: 130px;
+    left: 100px;
   }
   .arrow-right {
-    left: 200px;
+    left: 170px;
+  }
+  .yachts {
+    margin-left: 20px;
   }
 }
 .container {
