@@ -4,47 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Kaushan+Script&family=Lobster&family=Sevillana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet">
 </head>
 <body>
-<div class="big-svg">
-    <svg class="sumbol" width="426" height="598">
-        <use href="./sumbol.svg" width="426" height="598"></use>
-    </svg>
-
-    <div class="cricle"></div>
-
-    <div class="clients">
-        <div class="clients-img">
-    <img src="./img/claints-one.png" alt="">
-    <img src="./img/claints-two.png" alt="">
-    <img src="./img/claints-three.png" alt="">
-    </div>
-    <p class="clients-text">Our Clients</p>
-    </div>
-
-    <img class="man" src="./img/man.jpg" alt="">
-
-    <img class="yacht" src="./img/yacht.png" alt="">
-
-    <div class="text_big-svg">
-        <p class="text_big-svg-12m">$12M</p>
-        <p class="text_big-svg-p">Book now and make your dream yacht rental a reality</p>
-    </div>
-    </div>
-
-    <div class="text">
-        <div class="title-text">
-        <h1 class="title">Explore the High <br> Seas with <span class="special"><i>Our Luxury <br> Yacht</i></span> Rentals</h1>
-        <p class="title-p">Experience the freedom and luxury of yachting on the open seas. Choose <br> from our top-of-the-line yachts and embark on an unforgettable journey <br> surrounded by breathtaking views and state-of-the-art amenities.</p>
+    <section class="hero">
+        <div class="container hero-flex">
+            <div class="hero_card">
+                <img src="./sumbol.svg" alt="" class="hero_card-bg">
+                <img src="./img/claints-one.png" alt="" class="hero_card-img1">
+                <img src="./img/claints-two.png" alt="" class="hero_card-img2">
+                <img src="./img/claints-three.png" alt="" class="hero_card-img3">
+                <p class="hero_card-title">OUR CLIENTS</p>
+                <img src="./img/man.jpg" alt="" class="hero_card-man">
+                <img src="./img/modal-yaht.png" alt="" class="hero_card-yacht">
+                <p class="hero_card-price">$12M</p>
+                <p class="hero_card-text">Book now and make your dream yacht rental a reality</p>
+            </div>
+            <div class="hero_wrapper">
+                <h1 class="hero_title">Explore the High Seas with <span class="hero_title-grad">Our Luxury Yacht</span> Rentals</h1>
+                <p class="hero_text">Experience the freedom and luxury of yachting on the open seas. Choose from our top-of-the-line yachts and embark on an
+                unforgettable journey surrounded by breathtaking views and state-of-the-art amenities.</p>
+                <button class="hero_btn-start">Get Started</button>
+                <button class="hero_btn-explore">Explore</button>
+            </div>
         </div>
-
-        <div class="button-title">
-            <button class="title-button">Get Started</button>
-            <button class="title-btn">Explore</button>
-        </div>
+    </section>
 </body>
 </html>
