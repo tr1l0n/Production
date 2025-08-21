@@ -4,6 +4,16 @@
     height: 1120px;
     background-color: $bg-color;
     position: relative;
+    
+        &_img-sun {
+            width: 335px;
+            height: 335px;
+        }
+    
+        &_img-fish {
+            width: 335px;
+            height: 335px;
+        }
     &_wrapper{
         width: 335px;
         height: 335px;

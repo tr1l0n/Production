@@ -4,6 +4,14 @@
   background-color: #11131F;
   position: relative;
 }
+.activities_img-sun {
+  width: 335px;
+  height: 335px;
+}
+.activities_img-fish {
+  width: 335px;
+  height: 335px;
+}
 .activities_wrapper {
   width: 335px;
   height: 335px;

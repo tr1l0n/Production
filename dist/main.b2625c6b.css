@@ -5,6 +5,11 @@
   position: relative;
 }
 
+.activities_img-sun, .activities_img-fish {
+  width: 335px;
+  height: 335px;
+}
+
 .activities_wrapper {
   width: 335px;
   height: 335px;
