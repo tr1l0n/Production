@@ -824,6 +824,7 @@ textarea.booking__textarea:-webkit-autofill {
   }
 }
 .page-header {
+  width: 100%;
   padding-top: 30px;
   height: 72px;
   background-color: #11131F;
@@ -863,10 +864,36 @@ textarea.booking__textarea:-webkit-autofill {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(255, 255, 255);
+  background: #11131F;
   transform: translateX(-100%);
   transition: transform 0.4s ease-in-out;
   z-index: 100;
+}
+
+.burger-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.burger-nav-link {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 118%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+}
+
+.burger-grad {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  filter: blur(200px);
+  position: absolute;
+  top: 614px;
+  left: 53px;
+  background-color: #939CAC;
 }
 
 .menu-overlay.active {
@@ -942,12 +969,13 @@ textarea.booking__textarea:-webkit-autofill {
   height: 66px;
   left: 64px;
   top: 619px;
+  font-family: DM Sans;
 }
 
 .text_big-svg-12m {
   width: 130px;
   height: 66px;
-  font-family: "DM Sans";
+  font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
@@ -965,7 +993,7 @@ textarea.booking__textarea:-webkit-autofill {
 .text_big-svg-p {
   width: 208px;
   height: 36px;
-  font-family: "DM Sans";
+  font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1031,19 +1059,13 @@ textarea.booking__textarea:-webkit-autofill {
   padding-top: 15px;
 }
 
-body {
-  background-color: rgb(31, 33, 45);
-  display: flex;
-  align-items: center;
-}
-
 .text {
   padding-left: 694px;
   padding-top: 149px;
 }
 
-.body {
-  font-family: DM Sans;
+body {
+  background-color: rgb(31, 33, 45);
 }
 
 .special {
@@ -1093,6 +1115,26 @@ body {
   .yacht {
     width: 378px;
     height: 221px;
+  }
+  .title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .title {
+    font-size: 36px;
+  }
+  .sumbol {
+    width: 335px;
+    height: 427px;
+  }
+  .man {
+    width: 133px;
+    height: 133px;
+  }
+  .yacht {
+    width: 278px;
+    height: 167px;
   }
 }
 .reviews__container {
@@ -1348,7 +1390,14 @@ body {
     width: 375px;
   }
 }
-.card-one, .card-two, .card-three {
+.card-one, .card-second {
+  background-color: rgb(31, 33, 45);
+  width: 354px;
+  height: 508px;
+  border-radius: 24px;
+}
+
+.card-third {
   background-color: rgb(31, 33, 45);
   width: 354px;
   height: 508px;
@@ -1369,6 +1418,7 @@ body {
   display: flex;
   gap: 16px;
   align-items: center;
+  justify-content: center;
 }
 
 .yaht-one_img, .yaht-twoo_img, .yaht-three_img {
@@ -1418,7 +1468,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .card-three {
+  .card-third {
     display: none;
   }
   .conteiner {
@@ -1467,7 +1517,7 @@ body {
   }
 }
 @media (max-width: 376px) {
-  .card-two {
+  .card-second {
     display: none;
   }
   .card-one {
