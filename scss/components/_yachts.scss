@@ -1,4 +1,11 @@
-.card-one, .card-two, .card-three {
+.card-one, .card-second {
+    background-color: rgba(31, 33, 45, 1);
+    width: 354px;
+    height: 508px;
+    border-radius: 24px;
+}
+
+.card-third {
     background-color: rgba(31, 33, 45, 1);
     width: 354px;
     height: 508px;
@@ -19,6 +26,7 @@
     display: flex;
     gap: 16px;
     align-items: center;
+    justify-content: center;
 }
 
 .yaht-one_img, .yaht-twoo_img, .yaht-three_img {
@@ -69,7 +77,7 @@
 
 @media (max-width: 768px) {
 
-    .card-three{
+    .card-third {
         display: none;
     }
 
@@ -128,7 +136,7 @@
 
 @media (max-width: 376px) {
     
-    .card-two{
+    .card-second {
         display: none;
     }
     

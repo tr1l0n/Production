@@ -47,12 +47,13 @@ width: 362px;
 height: 66px;
 left: 64px;
 top: 619px;
+font-family: DM Sans;
 }
 
 .text_big-svg-12m {
 width: 130px;
 height: 66px;
-font-family: 'DM Sans';
+font-family: DM Sans;
 font-style: normal;
 font-weight: 400;
 font-size: 60px;
@@ -68,7 +69,7 @@ flex-grow: 0;
 .text_big-svg-p {
 width: 208px;
 height: 36px;
-font-family: 'DM Sans';
+font-family: DM Sans;
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
@@ -134,19 +135,13 @@ font-size: 60px;
     padding-top: 15px;
 }
 
-body {
-    background-color: rgba(31, 33, 45, 1);
-    display: flex;
-    align-items: center;
-}
-
 .text {
     padding-left: 694px;
     padding-top: 149px;
 }
 
-.body {
-    font-family: DM Sans;
+body {
+    background-color: rgba(31, 33, 45, 1);
 }
 
 .special {
@@ -204,5 +199,29 @@ top: 509px;
         height: 221px;
     }
 
+    .title {
+        font-size: 60px;
+    }
+}
 
+@media (max-width: 375px) {
+
+    .title {
+        font-size: 36px;
+    }
+
+    .sumbol {
+        width: 335px;
+        height: 427px;
+    }
+
+    .man {
+        width: 133px;
+        height: 133px;
+    }
+
+    .yacht {
+        width: 278px;
+        height: 167px;
+    }
 }
